@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio di tabella</title>
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* Border collapse sceglie come comportarsi quandom ci sono due bordi appiccicati */
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        #prevButton {
+            text-align: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <!--Riga con i nomi dei campi-->
+                <caption>Utenti</caption>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Età</th>
+                    <th>eMail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Dati veri e propri-->
+
+                <tr>
+                    <td>Stefano</td>
+                    <td>Casola</td>
+                    <td>19</td>
+                    <td>Stefano@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Vincenzo</td>
+                    <td>Costantini</td>
+                    <td>12</td>
+                    <td>Vincenzo@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Mario</td>
+                    <td>Rossi</td>
+                    <td>22</td>
+                    <td>Mario@rossi.it</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" id="prevButton"><button>Avanti</button></td>
+                    <td colspan="2" id="nextButton"><button>Indietro</button></td>
+                </tr>
+                <!--Riga conclusiva con calcoli ecc-->
+            </tfoot>
+
+        </table>
+    </main>
+
+    <label for="Username"></label>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

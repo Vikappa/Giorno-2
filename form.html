@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio di form</title>
+</head>
+
+<body>
+    <main>
+        <h2>Registrazione utente</h2>
+        <form>
+            <!--Il tago form rinchiude tutto il contenuto del form-->
+            <div>
+                <label for="nome">Nome Utente</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il nome " />
+            </div>
+            <div>
+                <label for="cognome">Cognome Utente</label>
+                <input type="text" id="cognome" name="cognome" placeholder="Inserisci il cognome" />
+            </div>
+            <div>
+                <label for="età">Età utente</label>
+                <input type="number" id="età" name="età" placeholder="Inserisci la tua età" min="0" />
+            </div>
+            <div>
+                <label for="birthdate">Data di nascita</label>
+                <input type="date" id="birthdate" name="datanascita" />
+            </div>
+            <div>
+                <!--Un button messo dentro un form diventa automaticamente un type=submit-->
+                <button onclick="Cliccato">INVIA</button>
+            </div>
+
+        </form>
+
+
+
+        <div>
+            <label for="strumenti_suonati">Seleziona uno strumento</label>
+            <option>Chitarra</option>
+            <option>Bass0</option>
+            <option>Batteria</option>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
